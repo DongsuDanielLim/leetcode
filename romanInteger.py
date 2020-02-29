@@ -26,7 +26,7 @@ def romanToInteger (s):
     for i in range(len(s) - 1):
         current = s[i] #roman char
         if current in romanChars: # exists in map
-            if romanChars[current] < romanChars[ s[i+1] ]: # 앞글자와 비교
+            if romanChars[current] < romanChars[ s[i+1] ]: # 뒷글자와 비교
                 print('in map', romanChars[current])
                 result -= romanChars[current]
             else:
